@@ -1,0 +1,8 @@
+{
+  "guestbook": [
+    {
+      "name": "Example Reader",
+      "message": "This is a sample message. Approved guestbook messages you want to show publicly go here \u2014 copy them over from the Netlify Forms dashboard, or edit via /admin."
+    }
+  ]
+}

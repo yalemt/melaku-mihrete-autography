@@ -1,0 +1,10 @@
+{
+  "book_title": "A Life Between Three Flags",
+  "subtitle": "The memoir of [Uncle's Full Name]",
+  "author": "[Uncle's Full Name]",
+  "tagline": "Addis Ababa. Bonn. Chicago. One life, three stamps in the passport.",
+  "hero_excerpt": "I have carried three countries in one chest of memory: the red earth of home, the cold order of a second language, and the wide roads of a third. This is how it happened.",
+  "about_text": "Replace this with your uncle's biography: where he was born, what he did for work, what took him from Ethiopia to Germany and the USA, and what this book means to him. Two or three paragraphs is plenty. This text is edited from the /admin panel, no code required.",
+  "download_pdf": "book/manuscript.pdf",
+  "countries": ["Ethiopia", "Germany", "USA"]
+}

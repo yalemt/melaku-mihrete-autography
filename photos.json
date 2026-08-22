@@ -1,0 +1,28 @@
+{
+  "photos": [
+    {
+      "id": "p1",
+      "src": "images/placeholder-ethiopia.svg",
+      "caption": "Replace with a real caption for this photo.",
+      "country": "Ethiopia",
+      "category": "Family",
+      "year": "1975"
+    },
+    {
+      "id": "p2",
+      "src": "images/placeholder-germany.svg",
+      "caption": "Replace with a real caption for this photo.",
+      "country": "Germany",
+      "category": "Work",
+      "year": "1988"
+    },
+    {
+      "id": "p3",
+      "src": "images/placeholder-usa.svg",
+      "caption": "Replace with a real caption for this photo.",
+      "country": "USA",
+      "category": "Travel",
+      "year": "2001"
+    }
+  ]
+}

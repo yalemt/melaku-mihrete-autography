@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">
+  <rect width="800" height="600" fill="#2F4A3C"/>
+  <text x="400" y="290" font-family="Georgia, serif" font-size="28" fill="#F2EBDD" text-anchor="middle">Photo placeholder</text>
+  <text x="400" y="330" font-family="monospace" font-size="16" fill="#F2EBDD" text-anchor="middle">upload a real photo via /admin (germany)</text>
+</svg>

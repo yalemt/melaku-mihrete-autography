@@ -1,0 +1,31 @@
+{
+  "chapters": [
+    {
+      "id": "ch01",
+      "order": 1,
+      "country": "Ethiopia",
+      "years": "1958 - 1980",
+      "title": "Chapter 1 - Where the Story Begins",
+      "excerpt": "Replace this with the opening lines of the chapter, enough to draw a reader in.",
+      "text": "Replace this with the full chapter text. Use the /admin panel to edit this without touching code. You can add as many chapters as you like; each one just needs an id, an order number, a country, a year range, a title, a short excerpt, and the full text."
+    },
+    {
+      "id": "ch02",
+      "order": 2,
+      "country": "Germany",
+      "years": "1981 - 1994",
+      "title": "Chapter 2 - Crossing Over",
+      "excerpt": "Replace this with the opening lines of the chapter.",
+      "text": "Replace this with the full chapter text."
+    },
+    {
+      "id": "ch03",
+      "order": 3,
+      "country": "USA",
+      "years": "1995 - present",
+      "title": "Chapter 3 - A Third Home",
+      "excerpt": "Replace this with the opening lines of the chapter.",
+      "text": "Replace this with the full chapter text."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+backend:
+  name: git-gateway
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME     # e.g. yaye123/uncle-memoir
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/YOUR-DECAPBRIDGE-SITE-ID
+  gateway_url: https://gateway.decapbridge.com
+
+# This makes uploaded photos land in /images and be referenced
+# correctly by the site's JSON data files.
+media_folder: "images"
+public_folder: "images"
+
+publish_mode: simple
+
+collections:
+  - name: "site"
+    label: "Site text (home page, about page)"
+    files:
+      - name: "site"
+        label: "Main site content"
+        file: "data/site.json"
+        fields:
+          - { label: "Book title", name: "book_title", widget: "string" }
+          - { label: "Subtitle (shown in browser tab)", name: "subtitle", widget: "string" }
+          - { label: "Author name", name: "author", widget: "string" }
+          - { label: "Tagline (under the title on the home page)", name: "tagline", widget: "string" }
+          - { label: "Hero quote", name: "hero_excerpt", widget: "text" }
+          - { label: "About page biography", name: "about_text", widget: "text" }
+          - { label: "Path to the downloadable PDF", name: "download_pdf", widget: "string", hint: "Upload the PDF into the /book folder via GitHub, then put its filename here, e.g. book/manuscript.pdf" }
+          - { label: "Countries", name: "countries", widget: "list" }
+
+  - name: "chapters"
+    label: "Book chapters"
+    files:
+      - name: "chapters"
+        label: "All chapters"
+        file: "data/chapters.json"
+        fields:
+          - name: "chapters"
+            label: "Chapters"
+            widget: "list"
+            fields:
+              - { label: "ID (unique, no spaces)", name: "id", widget: "string" }
+              - { label: "Order (1, 2, 3...)", name: "order", widget: "number" }
+              - { label: "Country", name: "country", widget: "select", options: ["Ethiopia", "Germany", "USA"] }
+              - { label: "Years", name: "years", widget: "string" }
+              - { label: "Chapter title", name: "title", widget: "string" }
+              - { label: "Short excerpt (teaser)", name: "excerpt", widget: "text" }
+              - { label: "Full chapter text", name: "text", widget: "text" }
+
+  - name: "photos"
+    label: "Photo gallery"
+    files:
+      - name: "photos"
+        label: "All photos"
+        file: "data/photos.json"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            widget: "list"
+            fields:
+              - { label: "ID (unique, no spaces)", name: "id", widget: "string" }
+              - { label: "Photo", name: "src", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+              - { label: "Country", name: "country", widget: "select", options: ["Ethiopia", "Germany", "USA"] }
+              - { label: "Category", name: "category", widget: "select", options: ["Family", "Work", "Travel", "Friends", "Other"] }
+              - { label: "Year", name: "year", widget: "string" }
+
+  - name: "guestbook"
+    label: "Guestbook (public messages)"
+    files:
+      - name: "guestbook"
+        label: "Messages shown on the guestbook page"
+        file: "data/guestbook.json"
+        fields:
+          - name: "guestbook"
+            label: "Messages"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Message", name: "message", widget: "text" }
