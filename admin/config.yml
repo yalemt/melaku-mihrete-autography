@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: yalemgse-9778-18-ui/Melaku-Mihrete-Autography
+  name: git-gateway
   branch: main
 
 media_folder: "images"
