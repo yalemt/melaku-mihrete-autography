@@ -2,3 +2,27 @@ backend:
   name: github
   repo: yalemgse-9778-18-ui/Melaku-Mihrete-Autography
   branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "chapters"
+    label: "Book Chapters"
+    folder: "_chapters"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "guestbook"
+    label: "Guestbook Entries"
+    folder: "_guestbook"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Message", name: "body", widget: "markdown"}
